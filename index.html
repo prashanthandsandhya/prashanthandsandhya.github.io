@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ProjectPS: Prashanth & Sandhya are getting merged to main. P.S. The Final Commit. September 7, 2026.">
+    <title>ProjectPS | P.S. The Final Commit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Animated neural network background -->
+    <canvas id="neural-bg" aria-hidden="true"></canvas>
+
+    <!-- Circuit overlay pattern -->
+    <div class="circuit-overlay" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-icon">⚭</span>
+        <span class="brand-name">ProjectPS</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#story">Story</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#registry">Registry</a>
+        <a href="#guestbook">Guestbook</a>
+        <a class="nav-rsvp" href="#rsvp">RSVP</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-content">
+          <!-- Floating robot & AI badges -->
+          <div class="hero-float-badges" aria-hidden="true">
+            <div class="float-badge fb-1">&#129302;</div>
+            <div class="float-badge fb-2">&#127860;</div>
+            <div class="float-badge fb-3">&#128200;</div>
+            <div class="float-badge fb-4">&#127795;</div>
+            <div class="float-badge fb-5">&#9978;</div>
+          </div>
+
+          <div class="hero-terminal">
+            <div class="terminal-chrome">
+              <div class="terminal-dots"><span></span><span></span><span></span></div>
+              <span class="terminal-title">zsh — project_ps</span>
+            </div>
+            <div class="terminal-body" id="terminal-body"></div>
+          </div>
+
+          <div class="hero-text">
+            <p class="hero-eyebrow">// initiating forever protocol</p>
+            <h1><span class="hero-name glow-text">Prashanth</span> <span class="hero-amp">&</span> <span class="hero-name glow-text">Sandhya</span></h1>
+            <p class="hero-tagline">P.S. The Final Commit</p>
+            <p class="hero-meta">September 7, 2026 &middot; Livermore, California</p>
+
+            <p class="countdown-heading">ETA to production:</p>
+            <div class="countdown" id="countdown">
+              <div class="countdown-item"><span class="countdown-num" id="cd-days">---</span><span class="countdown-label">days</span></div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-item"><span class="countdown-num" id="cd-hours">--</span><span class="countdown-label">hrs</span></div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-item"><span class="countdown-num" id="cd-mins">--</span><span class="countdown-label">min</span></div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-item"><span class="countdown-num" id="cd-secs">--</span><span class="countdown-label">sec</span></div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-glow" href="#rsvp"><span class="btn-icon">&#10003;</span> Approve &amp; Merge</a>
+              <a class="btn btn-ghost" href="#events">cat changelog.md</a>
+            </div>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge badge-live"><span class="badge-dot"></span>build: passing</span>
+            <span class="badge">&#129302; AI &amp; Robots</span>
+            <span class="badge">&#127795; National Parks</span>
+            <span class="badge">&#127860; Foodies</span>
+            <span class="badge">&#9968; Hiking</span>
+            <span class="badge">&#9978; Car Camping</span>
+            <span class="badge">&#128200; Evals</span>
+            <span class="badge">&#128640; Builders</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- README -->
+      <section class="section section-readme" id="readme">
+        <div class="section-inner grid-2col">
+          <div class="reveal-left">
+            <p class="eyebrow"># README.md</p>
+            <h2>Two AI Builders.<br>One forever project.</h2>
+          </div>
+          <div class="reveal-right">
+            <p class="body-text">
+              We've been pair-programming through life — debating tasting menus,
+              car camping under the stars at Yosemite, fine-tuning our weekend
+              hiking evals, and shipping robot demos at conferences nobody told us to attend.
+            </p>
+            <p class="body-text body-text-accent sequence-reveal">
+              <span class="seq-line">This September, we're pushing the most important commit of our lives.</span>
+              <br>
+              <span class="seq-line">No rollback.</span>
+              <span class="seq-line">No feature flag.</span>
+              <span class="seq-line">No A/B test.</span>
+              <br>
+              <span class="seq-line seq-final">Production-ready.</span>
+              <br>
+              <span class="seq-line seq-heart">♥</span>
+            </p>
+            <div class="status-card">
+              <div class="status-line"><span class="sk">project</span><span class="sv">"ProjectPS"</span></div>
+              <div class="status-line"><span class="sk">version</span><span class="sv">"1.0.0-forever"</span></div>
+              <div class="status-line"><span class="sk">status</span><span class="sv sv-green">&#9679; engaged</span></div>
+              <div class="status-line"><span class="sk">deployment</span><span class="sv">"2026-09-07T10:00:00-07:00"</span></div>
+              <div class="status-line"><span class="sk">maintainers</span><span class="sv">["prashanth", "sandhya"]</span></div>
+              <div class="status-line"><span class="sk">stack</span><span class="sv">["love", "AI", "robots", "trails", "food", "camping"]</span></div>
+              <div class="status-line"><span class="sk">license</span><span class="sv">"MIT (Merged In Temple)"</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR STORY -->
+      <section class="section section-dark" id="story">
+        <div class="section-inner">
+          <div class="section-header reveal-up">
+            <p class="eyebrow eyebrow-glow">## git log --reverse --oneline</p>
+            <h2>Our commit history.</h2>
+          </div>
+
+          <!-- Contribution heatmap -->
+          <div class="contrib-graph reveal-up" aria-label="Relationship activity heatmap">
+            <p class="contrib-label">contributions to #ProjectPS &middot; Jan 2025 – Dec 2025 &middot; (future dates still loading...)</p>
+            <div class="contrib-months" id="contrib-months"></div>
+            <div class="contrib-grid-wrapper">
+              <div class="contrib-grid" id="contrib-grid"></div>
+            </div>
+            <div class="contrib-legend">
+              <span>Less</span>
+              <span class="contrib-swatch cl-0"></span>
+              <span class="contrib-swatch cl-1"></span>
+              <span class="contrib-swatch cl-2"></span>
+              <span class="contrib-swatch cl-3"></span>
+              <span class="contrib-swatch cl-4"></span>
+              <span>More</span>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="commit-timeline" id="commit-timeline">
+            <div class="timeline-track">
+              <div class="timeline-line"></div>
+              <div class="timeline-pulse"></div>
+            </div>
+            <div class="commit-item" data-type="init" data-diff="files changed: 2 hearts &nbsp;|&nbsp; insertions: butterflies, nervousness, hope">
+              <div class="commit-node node-init"></div>
+              <div class="commit-content">
+                <span class="commit-hash">04062025</span>
+                <span class="commit-msg">init: connection established — two signals lock on. Apr 6.</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="feat" data-diff="runtime: 2h 47m &nbsp;|&nbsp; dropped_calls: 0 &nbsp;|&nbsp; excuses_to_hang_up: also 0">
+              <div class="commit-node node-feat"></div>
+              <div class="commit-content">
+                <span class="commit-hash">04072025</span>
+                <span class="commit-msg">feat(comms): 2-hour call from Florida — latency: 0ms, packet loss: 0%. couldn't hang up</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="feat" data-diff="she won at table tennis &nbsp;|&nbsp; he won at ordering food &nbsp;|&nbsp; net outcome: draw">
+              <div class="commit-node node-feat"></div>
+              <div class="commit-content">
+                <span class="commit-hash">04142025</span>
+                <span class="commit-msg">feat: first IRL deployment in SF — vegan sushi &rarr; table tennis. ping: excellent</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="feat" data-diff="decibels_tolerated: high &nbsp;|&nbsp; songs_now_ours: 4 &nbsp;|&nbsp; next_concert: already booked">
+              <div class="commit-node node-feat"></div>
+              <div class="commit-content">
+                <span class="commit-hash">04212025</span>
+                <span class="commit-msg">feat(audio): first concert — confirmed: vibes are production-ready</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="feat" data-diff="models_debated: 14 &nbsp;|&nbsp; who_was_right: depends who you ask &nbsp;|&nbsp; sleep_lost: a lot">
+              <div class="commit-node node-feat"></div>
+              <div class="commit-content">
+                <span class="commit-hash">a8b1f4c</span>
+                <span class="commit-msg">feat(ai): late-night evals, robot demos, arguing about benchmarks at 2am</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="feat" data-diff="courses_per_meal: 7-12 &nbsp;|&nbsp; photos_of_food: embarrassing &nbsp;|&nbsp; regrets: 0">
+              <div class="commit-node node-feat"></div>
+              <div class="commit-content">
+                <span class="commit-hash">c9f3b7e</span>
+                <span class="commit-msg">feat(food): tasting menus at restaurants become our love language — as pair debugging</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="refactor" data-diff="closet_space_remaining: 12% &nbsp;|&nbsp; whose_fault: mutual &nbsp;|&nbsp; revert_possible: false">
+              <div class="commit-node node-refactor"></div>
+              <div class="commit-content">
+                <span class="commit-hash">f1a9c3d</span>
+                <span class="commit-msg">refactor!: BREAKING CHANGE — "me" &rarr; "we". codebases merged. no rollback.</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="test" data-diff="steps_walked: 284,000+ &nbsp;|&nbsp; trails_conquered: 23 &nbsp;|&nbsp; "just 5 more minutes" lies: countless">
+              <div class="commit-node node-test"></div>
+              <div class="commit-content">
+                <span class="commit-hash">b5e7d2f</span>
+                <span class="commit-msg">test: SF &rarr; Tahoe &rarr; Catalina &rarr; Mammoth &rarr; Yosemite &rarr; NYC &rarr; (more to come)</span>
+              </div>
+            </div>
+            <div class="commit-item" data-type="milestone" data-diff="// TODO: execute proposal.run() — awaiting perfect_moment_lock">
+              <div class="commit-node node-milestone"></div>
+              <div class="commit-content">
+                <span class="commit-hash">9c4a6e8</span>
+                <span class="commit-msg">milestone(pending): the proposal — running final evals...</span>
+              </div>
+            </div>
+            <div class="commit-item commit-head" data-type="deploy" data-diff="// scheduled: Sep 7, 2026 — deploy pipeline warming up">
+              <div class="commit-node node-head"></div>
+              <div class="commit-content">
+                <span class="commit-hash hash-head">HEAD</span>
+                <span class="commit-msg msg-head">deploy(prod): the wedding — ETA Sep 7, 2026 &#128205;</span>
+              </div>
+            </div>
+          </div>
+          <p class="story-outro reveal-up">The repo is still actively maintained. Contributors welcome at the ceremony.</p>
+        </div>
+      </section>
+
+      <!-- EVENTS -->
+      <section class="section" id="events">
+        <div class="section-inner">
+          <div class="section-header reveal-up">
+            <p class="eyebrow">## deployment_pipeline.yaml</p>
+            <h2>The deployment plan.</h2>
+          </div>
+          <div class="event-grid">
+            <article class="event-card reveal-up">
+              <div class="event-env event-env-staging">&#9679; STAGING</div>
+              <p class="event-date">TBD</p>
+              <h3>Mehendi</h3>
+              <p class="event-venue">Location TBD</p>
+              <p class="event-note">Awaiting approval. Deployment date pending.</p>
+            </article>
+            <article class="event-card reveal-up">
+              <div class="event-env event-env-staging">&#9679; STAGING</div>
+              <p class="event-date">TBD</p>
+              <h3>Reception</h3>
+              <p class="event-venue">Location TBD</p>
+              <p class="event-note">Dinner, dancing, celebration. Watch the release notes.</p>
+            </article>
+            <article class="event-card event-featured reveal-up">
+              <div class="event-env">&#9679; PRODUCTION</div>
+              <p class="event-date">MON SEP 07 &middot; 10:00 PT</p>
+              <h3>The Ceremony</h3>
+              <p class="event-venue">Shiva-Vishnu Temple</p>
+              <p class="event-addr">1232 Arrowhead Ave<br>Livermore, CA 94551</p>
+              <p class="event-note">10:00 – 11:30 AM &middot; Traditional attire welcome & encouraged.</p>
+              <a class="event-link" href="https://maps.google.com/?q=Shiva+Vishnu+Temple+Livermore+CA" target="_blank" rel="noreferrer">navigate_to(venue) →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section section-alt" id="gallery">
+        <div class="section-inner">
+          <div class="section-header reveal-up">
+            <p class="eyebrow">## ls -la ./adventures</p>
+            <h2>Field notes from the trail.</h2>
+            <p class="section-sub">Summits, sunsets, robot arms, tasting menus, car camping under the stars, and evals that somehow passed on the first try.</p>
+          </div>
+          <div class="gallery-carousel reveal-up">
+            <button class="gallery-arrow gallery-prev" aria-label="Previous">&larr;</button>
+            <div class="gallery-track" id="gallery-track"></div>
+            <button class="gallery-arrow gallery-next" aria-label="Next">&rarr;</button>
+          </div>
+          <div class="gallery-dots" id="gallery-dots"></div>
+        </div>
+      </section>
+
+      <!-- REGISTRY -->
+      <section class="section" id="registry">
+        <div class="section-inner grid-2col">
+          <div class="reveal-left">
+            <p class="eyebrow">## requirements.txt</p>
+            <h2>No dependencies required.</h2>
+            <pre class="registry-requirements"><code># requirements.txt
+your-presence==1.0.0    # required
+your-blessings>=1.0     # means the world
+dance-moves>=any        # recommended
+gift>=0.0.0             # truly optional, but grateful</code></pre>
+          </div>
+          <div class="reveal-right">
+            <p class="body-text">
+              Honestly, you showing up is the whole gift. But if you insist on running <span class="code-inline" style="white-space:nowrap;">--upgrade</span> on our life — registry links dropping here soon.
+            </p>
+            <p class="body-text body-text-dim">
+              Until then, your RSVP is the only PR we need.
+            </p>
+            <a class="btn btn-dark" href="#rsvp">Submit your RSVP →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section class="section section-accent" id="rsvp">
+        <div class="section-inner grid-2col">
+          <div class="reveal-left">
+            <p class="eyebrow">## pull_request.review()</p>
+            <h2>Accept our merge request?</h2>
+            <p class="section-sub">This PR has been open for a while. We'd love your approval. No CI required — just a name and a yes.</p>
+            <div class="rsvp-meta">
+              <div class="rsvp-meta-row"><span class="code-inline">deadline:</span> 2026-08-01</div>
+              <div class="rsvp-meta-row"><span class="code-inline">reviewers:</span> you</div>
+              <div class="rsvp-meta-row">
+                <span class="code-inline">labels:</span>
+                <span class="rsvp-label">love</span>
+                <span class="rsvp-label rsvp-label-green">ready-to-merge</span>
+                <span class="rsvp-label rsvp-label-blue">ProjectPS</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="rsvp-form reveal-right" id="rsvp-form">
+            <div class="field">
+              <label for="guest-name">reviewer_name</label>
+              <input id="guest-name" name="name" type="text" autocomplete="name" required placeholder="Your full name">
+            </div>
+            <fieldset class="field">
+              <legend>verdict</legend>
+              <label class="choice">
+                <input name="attending" type="radio" value="yes" required>
+                <span class="choice-text choice-yes">&#10003; Approved — merging with joy</span>
+              </label>
+              <label class="choice">
+                <input name="attending" type="radio" value="no">
+                <span class="choice-text choice-no">&#10007; Changes requested — can't make it</span>
+              </label>
+            </fieldset>
+            <div class="field">
+              <label for="party-size">party_size</label>
+              <select id="party-size" name="guests" required>
+                <option value="">select()</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <button class="btn btn-primary btn-full" type="submit">
+              <span class="btn-icon">&#9654;</span> git push origin rsvp
+            </button>
+            <p class="form-status" id="rsvp-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- GUESTBOOK -->
+      <section class="section section-dark" id="guestbook">
+        <div class="section-inner">
+          <div class="section-header reveal-up">
+            <p class="eyebrow eyebrow-glow">## tail -f guestbook.log</p>
+            <h2>Leave a commit message.</h2>
+            <p class="section-sub">Wishes, roasts, or feature requests. All pushes to #ProjectPS welcome. Sketch something, upload a photo, or just write. Messages appear live below.</p>
+          </div>
+
+          <div class="gb-layout reveal-up">
+            <div class="gb-form-wrapper">
+              <!-- Tab switcher -->
+              <div class="gb-tabs">
+                <button class="gb-tab active" data-tab="text">&#9998; Write</button>
+                <button class="gb-tab" data-tab="draw">&#9999; Draw</button>
+                <button class="gb-tab" data-tab="upload">&#128247; Upload</button>
+              </div>
+
+              <form class="gb-form" id="guestbook-form">
+                <div class="field">
+                  <label for="gb-name">author</label>
+                  <input id="gb-name" name="name" type="text" required placeholder="Your name">
+                </div>
+
+                <!-- Text tab -->
+                <div class="gb-panel" id="panel-text">
+                  <div class="field">
+                    <label for="gb-message">commit_message</label>
+                    <textarea id="gb-message" name="message" rows="4" placeholder="Wishes, advice, roasts, haikus..."></textarea>
+                  </div>
+                </div>
+
+                <!-- Draw tab -->
+                <div class="gb-panel hidden" id="panel-draw">
+                  <div class="field">
+                    <label>sketch_pad</label>
+                    <div class="draw-container">
+                      <canvas id="draw-canvas" width="400" height="250"></canvas>
+                      <div class="draw-tools">
+                        <button type="button" class="draw-tool" id="draw-black" title="Black" style="background:#1a1a2e;"></button>
+                        <button type="button" class="draw-tool" id="draw-green" title="Green" style="background:#4ade80;"></button>
+                        <button type="button" class="draw-tool" id="draw-gold" title="Gold" style="background:#f0b429;"></button>
+                        <button type="button" class="draw-tool" id="draw-rose" title="Rose" style="background:#f472b6;"></button>
+                        <button type="button" class="draw-tool" id="draw-blue" title="Blue" style="background:#58a6ff;"></button>
+                        <button type="button" class="draw-tool draw-tool-clear" id="draw-clear" title="Clear">&#10006;</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Upload tab -->
+                <div class="gb-panel hidden" id="panel-upload">
+                  <div class="field">
+                    <label for="gb-upload">attach file</label>
+                    <div class="upload-zone" id="upload-zone">
+                      <input type="file" id="gb-upload" accept="image/*,video/*" hidden>
+                      <div class="upload-placeholder" id="upload-placeholder">
+                        <span>&#128247;</span>
+                        <p>Click or drag to upload an image</p>
+                        <p class="upload-hint">Max 2MB &middot; JPG, PNG, GIF</p>
+                      </div>
+                      <img id="upload-preview" class="upload-preview hidden" alt="Preview">
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-primary btn-full" type="submit">
+                  <span class="btn-icon">&#9654;</span> git commit &amp;&amp; push
+                </button>
+                <p class="form-status" id="guestbook-status" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+
+            <div class="gb-entries" id="guestbook-entries">
+              <p class="gb-empty">// log is empty — be the first contributor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-left">
+        <p class="footer-brand">⚭ ProjectPS</p>
+        <p class="footer-ver">v1.0.0 &middot; releasing 2026-09-07</p>
+      </div>
+      <div class="footer-center">
+        <p class="footer-heart">No hallucinations. This is real. &#10084;&#65039;</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-signoff">P.S. The Final Commit</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+      <img src="" alt="">
+      <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-storage-compat.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
