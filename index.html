@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Prashanth & Sandhya are getting married. September 7, 2026.">
+    <title>Prashanth & Sandhya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+    <main>
+      <section class="invite">
+        <div class="invite-inner">
+          <p class="invite-prelude">Together with their families</p>
+
+          <h1 class="names">
+            <span class="name">Prashanth</span>
+            <span class="amp">&</span>
+            <span class="name">Sandhya</span>
+          </h1>
+
+          <p class="invite-line">request the pleasure of your company at their wedding</p>
+
+          <div class="details">
+            <div class="detail-block">
+              <p class="detail-label">Date</p>
+              <p class="detail-value">Sunday, September 7, 2026</p>
+              <p class="detail-sub">10:00 in the morning</p>
+            </div>
+
+            <div class="detail-divider"></div>
+
+            <div class="detail-block">
+              <p class="detail-label">Venue</p>
+              <p class="detail-value">Shiva-Vishnu Temple</p>
+              <p class="detail-sub">1232 Arrowhead Ave, Livermore, CA</p>
+            </div>
+          </div>
+
+          <div class="attire">
+            <p>Traditional attire welcome & encouraged</p>
+          </div>
+
+          <div class="actions">
+            <a class="btn btn-outline" href="https://maps.google.com/?q=Shiva+Vishnu+Temple+Livermore+CA" target="_blank" rel="noreferrer">View Map</a>
+          </div>
+
+          <div class="rsvp">
+            <p class="rsvp-heading">Kindly Respond</p>
+            <form class="rsvp-form" id="rsvp-form">
+              <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+              <div class="rsvp-choices">
+                <label class="rsvp-choice">
+                  <input type="radio" name="attending" value="yes" required>
+                  <span>Joyfully accepts</span>
+                </label>
+                <label class="rsvp-choice">
+                  <input type="radio" name="attending" value="no">
+                  <span>Respectfully declines</span>
+                </label>
+              </div>
+              <select name="guests" required>
+                <option value="">Number of guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button class="btn" type="submit">Send RSVP</button>
+              <p class="rsvp-status" id="rsvp-status"></p>
+            </form>
+          </div>
+
+          <p class="closing">With love and joy</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      firebase.initializeApp({
+        apiKey: "AIzaSyD6O7xRdRQQe2ku45Kq2F_6cOmjLXaxY8Q",
+        authDomain: "thepswedding.firebaseapp.com",
+        databaseURL: "https://thepswedding-default-rtdb.firebaseio.com",
+        projectId: "thepswedding",
+        storageBucket: "thepswedding.firebasestorage.app",
+        messagingSenderId: "28727762701",
+        appId: "1:28727762701:web:94191e76c4dbed9f225a44"
+      });
+      const db = firebase.database();
+      const form = document.getElementById('rsvp-form');
+      const status = document.getElementById('rsvp-status');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = form.name.value.trim();
+        const attending = form.attending.value;
+        const guests = parseInt(form.guests.value);
+        if (!name || !attending || !guests) return;
+
+        db.ref('rsvps').push({ name, attending, guests, timestamp: Date.now() })
+          .then(() => {
+            status.textContent = attending === 'yes'
+              ? `See you there, ${name}!`
+              : `We'll miss you, ${name}.`;
+            status.className = 'rsvp-status success';
+            form.reset();
+          })
+          .catch(() => {
+            status.textContent = 'Something went wrong. Please try again.';
+            status.className = 'rsvp-status error';
+          });
+      });
+    </script>
+  </body>
+</html>
